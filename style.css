@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 15px;
+    color: #64748b;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #1e40af;
+}
+
+.formulario,
+.movimentacao,
+.estoque,
+.historico {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#pesquisa {
+    margin-bottom: 20px;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.produto p {
+    color: #64748b;
+    margin-top: 6px;
+}
+
+.produto button {
+    width: auto;
+    padding: 10px 14px;
+    background: #dc2626;
+}
+
+.produto button:hover {
+    background: #b91c1c;
+}
+
+.alerta {
+    color: #dc2626 !important;
+    font-weight: bold;
+}
+
+.historico-item {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+@media (max-width: 650px) {
+    .indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .produto {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
